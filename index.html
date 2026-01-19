@@ -2,9 +2,87 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Test Netlify</title>
+  <title>Ajouter un événement</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>ÇA FONCTIONNE</h1>
+
+<div class="container">
+  <h1>Ajouter un événement</h1>
+
+  <form id="eventForm">
+
+    <!-- Nom -->
+    <div class="form-group">
+      <label for="event_name">Nom de l’événement</label>
+      <input
+        type="text"
+        class="form-control"
+        id="event_name"
+        name="event_name"
+        required
+      >
+    </div>
+
+    <!-- URL -->
+    <div class="form-group">
+      <label for="event_url">URL</label>
+      <input
+        type="url"
+        class="form-control"
+        id="event_url"
+        name="event_url"
+      >
+      <span id="url-status" class="help-block"></span>
+    </div>
+
+    <!-- Visibilité -->
+    <fieldset class="form-group">
+      <legend>Visibilité</legend>
+      <label class="radio-inline">
+        <input type="radio" name="visibility" value="1" checked> Public
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="visibility" value="0"> Privé
+      </label>
+    </fieldset>
+
+    <hr>
+
+    <!-- CENTRES D’INTÉRÊT -->
+    <h3>Centres d’intérêt</h3>
+
+    <!-- Recherche -->
+    <div class="form-group">
+      <input
+        type="text"
+        id="search-interets"
+        class="form-control"
+        placeholder="Rechercher un centre d’intérêt..."
+      >
+    </div>
+
+    <!-- Conteneur dynamique -->
+    <div id="centres-interets-container"></div>
+
+    <hr>
+
+    <button type="submit" class="btn btn-primary">
+      Enregistrer
+    </button>
+
+  </form>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="assets/js/centres-interets.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
