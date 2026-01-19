@@ -1,265 +1,85 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="fullscreen">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Click & Meet | Administration</title>
-<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700'>
-<link rel="stylesheet"  href="assets/css/bootstrap.min.css" />
-<link rel="stylesheet"  href="assets/css/font-awesome.min.css" />
-<link rel="stylesheet"  href="assets/css/styles.css" />
-<link rel="stylesheet"  href="assets/css/styles.preferences.css" />
-<link rel="stylesheet"  href="assets/css/sweetalert.css" />
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/sweetalert.min.js"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]--></head>
-<body><script>
-  if (localStorage.getItem('loggedIn') !== 'true') {
-    window.location.href = 'index.html';
-  }
-</script>
-<section class="top-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="nav nav-pills">
-          <li class="pull-left"><a class="top-header-link" href="/" target="_blank"><i class="fa fa-globe fa-lg"></i><span class="hidden-xs small"> Voir le site</span></a></li>
-          <li class="pull-left"><a class="top-header-link" href="admin.html"><i class="fa fa-home fa-lg"></i><span class="hidden-xs small"> Accueil</span></a></li>
-                    <li role="presentation" class="dropdown pull-right"> <a class="top-header-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user fa-lg"></i><span class="hidden-xs small">
-            Stéphane Mira            <span class="caret"></span></span> </a>
-            <ul class="dropdown-menu">
-              <li><a href="users.edit.php"><span class="small"><i class="fa fa-wrench fa-lg fa-fw"></i> Vos informations</span></a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="admin.html"><img src="images/logo.png?1455491714" /></a></div>
-        <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav navbar-right">
-                        <li > <a href="list.php?table=evenements">Événements</a></li>
-                                <li > <a href="list.php?table=centres_interet">Centres d'intérêt</a></li>
-                      </ul>
-    </div>
-      </div>
-</nav>
-<section class="dark">
-  <div class="container">
-    <div class="row height-buffer">
-      <div class="col-xs-12">
-        <h1>Bonjour
-          Stéphane          !</h1>
-      </div>
-    </div>
-  </div>
-</section>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Click & Meet | Connexion</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.preferences.css">
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body class="fullscreen primary-color-pref">
+
+<table class="fullscreen-table">
+<tbody>
+<tr>
+<td>
 <section>
-  <div class="container">
-    <div class="row top-buffer">
-      <div class="col-xs-12">
-        <h2 class="text-center bold">Limitations du serveur</h2>
-      </div>
-    </div>
-    <div class="row top-buffer">
-      <div class="col-sm-4 bottom-buffer text-center">
-        <div class="height-buffer-sm huge-icon"><?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 411 410.999" style="enable-background:new 0 0 411 410.999;" xml:space="preserve"
-	>
-<g>
-	<g>
-		<path d="M356.931,0H54.07c-4.333,0-7.848,3.521-7.848,7.857v395.277c0,4.354,3.519,7.865,7.848,7.865h302.859
-			c4.334,0,7.848-3.521,7.848-7.865V7.857C364.785,3.521,361.265,0.005,356.931,0z M84.499,390.463
-			c-9.79,0-17.736-7.939-17.736-17.734c0-9.798,7.946-17.738,17.736-17.738c9.796,0,17.737,7.94,17.737,17.738
-			C102.235,382.521,94.294,390.463,84.499,390.463z M84.499,56.011c-9.79,0-17.736-7.937-17.736-17.736
-			c0-9.796,7.941-17.737,17.736-17.737c9.796,0,17.737,7.941,17.737,17.737C102.235,48.075,94.294,56.011,84.499,56.011z
-			 M272.777,384.344H137.873v-21.967h134.904V384.344L272.777,384.344z M300.615,300.604c-5.104,5.104-11.879,7.914-19.09,7.914
-			c-7.209,0-13.984-2.812-19.078-7.902c-3.359-3.355-21.254-26.447-38.924-49.514c-5.857,1.059-11.863,1.696-18.023,1.696
-			c-55.848,0-101.121-45.272-101.121-101.119c0-55.848,45.273-101.121,101.121-101.121c55.843,0,101.121,45.273,101.121,101.121
-			c0,33.834-16.68,63.711-42.201,82.068c17.98,13.849,33.5,25.989,36.195,28.685C311.136,272.963,311.136,290.088,300.615,300.604z
-			 M326.5,390.463c-9.791,0-17.736-7.939-17.736-17.734c0-9.798,7.945-17.738,17.736-17.738c9.795,0,17.736,7.94,17.736,17.738
-			C344.236,382.521,336.294,390.463,326.5,390.463z M326.5,56.011c-9.791,0-17.736-7.937-17.736-17.736
-			c0-9.796,7.941-17.737,17.736-17.737s17.736,7.941,17.736,17.737C344.236,48.075,336.294,56.011,326.5,56.011z"/>
-		<path d="M199.894,199.894c0,0,65.459,86.345,71.23,92.11c5.768,5.764,15.113,5.764,20.879,0c5.764-5.768,5.764-15.111,0-20.885
-			C286.238,265.361,199.894,199.894,199.894,199.894z"/>
-		<path d="M226.701,151.68c0-11.709-9.494-21.201-21.201-21.201c-11.709,0-21.201,9.492-21.201,21.201s9.492,21.201,21.201,21.201
-			C217.207,172.879,226.701,163.389,226.701,151.68z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+<form id="identification">
+
+<div class="container">
+
+<div class="row bottom-buffer-sm">
+  <div class="col-xs-6 col-xs-push-3 col-sm-4 col-sm-push-4">
+    <img class="identification-logo" src="https://clickmeet.me/cm-gestion/images/logo.png">
+  </div>
 </div>
-        <h3 class="semibold primary-color-pref">Poids des fichiers</h3>
-        <div class="top-buffer-xs">Le serveur refusera tout fichier dont le poids dépasse <strong>20 Mos</strong>.</div>
-      </div>
-      <div class="col-sm-4 bottom-buffer text-center">
-        <div class="height-buffer-sm huge-icon"><?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 47.001 47.001" style="enable-background:new 0 0 47.001 47.001;"
-	 xml:space="preserve">
-<g>
-	<g id="Layer_1_65_">
-		<g>
-			<path d="M46.907,20.12c-0.163-0.347-0.511-0.569-0.896-0.569h-2.927C41.223,9.452,32.355,1.775,21.726,1.775
-				C9.747,1.775,0,11.522,0,23.501C0,35.48,9.746,45.226,21.726,45.226c7.731,0,14.941-4.161,18.816-10.857
-				c0.546-0.945,0.224-2.152-0.722-2.699c-0.944-0.547-2.152-0.225-2.697,0.72c-3.172,5.481-9.072,8.887-15.397,8.887
-				c-9.801,0-17.776-7.974-17.776-17.774c0-9.802,7.975-17.776,17.776-17.776c8.442,0,15.515,5.921,17.317,13.825h-2.904
-				c-0.385,0-0.732,0.222-0.896,0.569c-0.163,0.347-0.11,0.756,0.136,1.051l4.938,5.925c0.188,0.225,0.465,0.355,0.759,0.355
-				c0.293,0,0.571-0.131,0.758-0.355l4.938-5.925C47.018,20.876,47.07,20.467,46.907,20.12z"/>
-			<path d="M21.726,6.713c-1.091,0-1.975,0.884-1.975,1.975v11.984c-0.893,0.626-1.481,1.658-1.481,2.83
-				c0,1.906,1.551,3.457,3.457,3.457c0.522,0,1.014-0.125,1.458-0.334l6.87,3.965c0.312,0.181,0.65,0.266,0.986,0.266
-				c0.682,0,1.346-0.354,1.712-0.988c0.545-0.943,0.222-2.152-0.724-2.697l-6.877-3.971c-0.092-1.044-0.635-1.956-1.449-2.526V8.688
-				C23.701,7.598,22.816,6.713,21.726,6.713z M21.726,24.982c-0.817,0-1.481-0.665-1.481-1.48c0-0.816,0.665-1.481,1.481-1.481
-				s1.481,0.665,1.481,1.481C23.207,24.317,22.542,24.982,21.726,24.982z"/>
-		</g>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-</div>
-        <h3 class="semibold primary-color-pref">Durée d'un upload</h3>
-        <div class="top-buffer-xs">La durée maximum d'exécution d'un upload est de <strong>2,75 minutes</strong>.</div>
-      </div>
-      <div class="col-sm-4 bottom-buffer text-center">
-        <div class="height-buffer-sm huge-icon"><?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 472.79 472.79" style="enable-background:new 0 0 472.79 472.79;" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M353.451,213.05h5.34V39.326h-52.722V0H133.443l0.683,6.926c0,7.608-6.21,13.778-13.745,13.794
-				l-6.381-0.423v433.749l5.666-0.301c0.317,0,0.634-0.049,0.675-0.073c7.6,0,13.778,6.17,13.778,13.77v5.349h171.936v-27.401
-				h52.722v-185.64h-5.324c-12.876,0-23.345-10.494-23.345-23.353C330.105,223.511,340.575,213.05,353.451,213.05z M261.11,436.082
-				H152.74v-47.885h108.37V436.082z M261.11,372.516H152.74v-47.885h108.37V372.516z M261.11,305.862H152.74v-47.91h108.37V305.862z
-				 M261.11,217.456H152.74v-47.877h108.37V217.456z M261.11,153.89H152.74v-47.894h108.37V153.89z M261.11,87.22H152.74V39.326
-				h108.37V87.22z M348.11,269.991v164.717h-42.041v-31.165h31.01v-10.681h-31.01v-11.803h31.01v-10.665h-31.01v-11.437h31.01
-				v-10.681h-31.01v-10.242h31.01v-10.681h-31.01v-11.803h31.01V304.87h-31.01v-11.404h31.01v-10.681h-31.01v-87.382h31.01v-10.681
-				h-31.01v-11.811h31.01v-10.673h-31.01v-11.421h31.01v-10.673h-31.01v-10.266h31.01v-10.681h-31.01v-11.795h31.01V96.722h-31.01
-				V85.309h31.01V74.628h-31.01V50.023h42.041v152.744c-16.493,2.593-28.702,16.704-28.702,33.636
-				C319.408,253.319,331.617,267.414,348.11,269.991z"/>
-		</g>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-</div>
-        <h3 class="semibold primary-color-pref">Mémoire</h3>
-        <div class="top-buffer-xs">La mémoire est limitée à <strong>256 Mos</strong>.</div>
-      </div>
+
+<div class="row bottom-buffer-sm">
+  <div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+    <div class="form-group">
+      <label><h4 class="bold">Nom d'utilisateur</h4></label>
+      <input type="text" id="utl" class="form-control input-lg">
     </div>
   </div>
+</div>
+
+<div class="row bottom-buffer-sm">
+  <div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+    <div class="form-group">
+      <label><h4 class="bold">Mot de passe</h4></label>
+      <input type="password" id="mdp" class="form-control input-lg">
+    </div>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+    <button type="submit" class="btn btn-default btn-lg">Connexion</button>
+  </div>
+</div>
+
+</div>
+</form>
 </section>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- LOGIN FAKE -->
 <script>
 document.getElementById("identification").addEventListener("submit", function(e) {
-  e.preventDefault(); // empêche l'envoi réel du formulaire
-  window.location.href = "admin.html"; // redirection
+  e.preventDefault();
+
+  const user = document.getElementById("utl").value;
+  const pass = document.getElementById("mdp").value;
+
+  if (user === "admin" && pass === "team2024") {
+    localStorage.setItem("loggedIn", "true");
+    window.location.href = "admin.html";
+  } else {
+    alert("Identifiants incorrects");
+  }
 });
 </script>
+
 </body>
 </html>
