@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function () {
   $('#identification').on('submit', function (e) {
     e.preventDefault();
@@ -6,7 +5,6 @@ $(document).ready(function () {
     const user = $('#utl').val();
     const pass = $('#mdp').val();
 
-    // FAUX IDENTIFIANTS
     if (user === 'admin' && pass === 'team2024') {
       localStorage.setItem('loggedIn', 'true');
       window.location.href = 'admin.html';
@@ -15,4 +13,3 @@ $(document).ready(function () {
     }
   });
 });
-</script>
